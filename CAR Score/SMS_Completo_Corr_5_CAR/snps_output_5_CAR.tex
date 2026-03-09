@@ -1,0 +1,35 @@
+﻿\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\begin{table}[h]
+\caption{Rank CARSCORE para a Simulação 5.}
+\label{tab 2}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}10, 11, 13, 17, 19\\20\end{tabular} & 6(0) & 0.11 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}10, 12, 17, 18, 19\end{tabular} & 6(0) & 0.10 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{3}, 6, 7, 11, 12\\14, 15, 19\end{tabular} & 5(1) & 0.06 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{3}, 6, 7, 11, 12\\14, 15, 19\end{tabular} & 8(1) & 0.00 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, 7\\9, 11, 12, 15, 16\\17, 18, 20\end{tabular} & 13(4) & 0.17 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, 5\\6, 7, 9, 10, 11\\12, 13, 14, 15, 16\\17, 18, 19, 20\end{tabular} & 19(4) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\end{tabular} & 0(0) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}10, 11, 40, 53, 60\end{tabular} & 5(0) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\end{tabular} & 0(0) & - \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\begin{table}[h]
+\caption{Rank Correlação Parcial para a Simulação 2.}
+\label{tab 2}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, \textbf{5}\\\textbf{6}, \textbf{7}, \textbf{8}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{8}, 13, 79, 83\\88, 100\end{tabular} & 7(2) & 0.27 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{5}, \textbf{7}\\\textbf{8}, 10, 11, 15, 18\\19, 26, 28, 29, 30\\36, 38, 44, 45, 52\\61, 63, 67, 68, 69\\75, 76, 80, 84, 85\\89, 91, 92, 96, 99\end{tabular} & 40(6) & 0.37 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{4}, \textbf{7}, \textbf{8}, 14\\19, 42, 51, 52, 72\\74, 79, 95, 100\end{tabular} & 35(4) & 0.35 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{4}, \textbf{7}, \textbf{8}, 14\\19, 42, 51, 52, 72\\74, 79, 95, 100\end{tabular} & 14(4) & 0.36 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{7}, \textbf{8}, 13, 28, 52\\62, 88\end{tabular} & 7(2) & 0.29 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, \textbf{5}\\\textbf{7}, \textbf{8}, 10, 11, 13\\14, 15, 16, 17, 18\\19, 26, 28, 29, 30\\33, 35, 36, 38, 41\\42, 44, 45, 47, 50\\51, 52, 53, 56, 61\\62, 63, 67, 68, 69\\70, 72, 74, 75, 76\\77, 78, 79, 80, 83\\84, 85, 87, 88, 89\\91, 92, 95, 96, 99\\100\end{tabular} & 61(7) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{8}\end{tabular} & 1(1) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{5}, \textbf{7}\\\textbf{8}, 10, 12, 60, 88\\89\end{tabular} & 11(6) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{5}, \textbf{7}, \textbf{8}\end{tabular} & 5(5) & - \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}

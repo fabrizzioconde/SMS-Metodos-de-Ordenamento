@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\begin{table}[h]
+\caption{Rank RF para a Simulação 6.}
+\label{tab 2}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{40}\\\textbf{50}, \textbf{60}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, 11, \textbf{20}, \textbf{30}\\\textbf{50}, \textbf{60}, 530, 580, 917\end{tabular} & 10(6) & 0.65 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, 11, \textbf{20}, \textbf{30}\\\textbf{50}, \textbf{60}, 133, 359, 456\\530\end{tabular} & 25(6) & 0.66 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{50}\\\textbf{60}, 809, 996\end{tabular} & 11(6) & 0.70 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{50}\\\textbf{60}, 809, 996\end{tabular} & 8(6) & 0.85 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{30}, \textbf{50}, \textbf{60}\\809, 937\end{tabular} & 7(5) & 0.67 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, 11, 15, \textbf{20}\\\textbf{30}, 37, \textbf{50}, \textbf{60}, 109\\133, 359, 456, 486, 516\\530, 566, 580, 643, 723\\738, 809, 842, 845, 917\\937, 985, 996\end{tabular} & 28(6) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{30}, \textbf{50}, \textbf{60}\end{tabular} & 5(5) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, \textbf{10}, \textbf{20}, 22\\\textbf{30}, 34, \textbf{50}, \textbf{60}, 66\\96, 104, 121, 126, 141\\175, 177, 183, 201, 225\\234, 239, 260, 269, 302\\321, 325, 335, 337, 391\\395, 397, 412, 414, 438\\446, 477, 516, 554, 556\\580, 627, 642, 662, 686\\717, 720, 814, 825, 853\\862, 873, 874, 909, 920\\921, 925, 928, 930, 945\\959, 968, 973, 995\end{tabular} & 64(6) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{30}\end{tabular} & 3(3) & - \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}

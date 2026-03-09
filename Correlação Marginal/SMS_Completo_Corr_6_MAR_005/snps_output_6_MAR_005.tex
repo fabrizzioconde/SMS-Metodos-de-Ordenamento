@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\begin{table}[h]
+\caption{Rank Correlação Marginal para a Simulação 6.}
+\label{tab 2}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{40}\\\textbf{50}, \textbf{60}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, \textbf{10}, \textbf{20}, 22\\\textbf{30}, \textbf{50}, \textbf{60}, 121, 177\\335, 395, 438, 477, 580\\686, 814, 862, 874, 920\\921, 973, 995\end{tabular} & 23(6) & 0.72 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, 34\\\textbf{50}, \textbf{60}, 96, 104, 114\\121, 126, 141, 175, 177\\183, 201, 225, 239, 260\\278, 302, 321, 337, 369\\391, 395, 397, 414, 438\\446, 516, 554, 556, 580\\627, 642, 662, 686, 717\\720, 814, 853, 921, 925\\945, 959, 968, 973\end{tabular} & 46(6) & 0.74 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, 22, \textbf{30}\\\textbf{50}, \textbf{60}, 438, 973\end{tabular} & 49(6) & 0.71 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, 22, \textbf{30}\\\textbf{50}, \textbf{60}, 438, 973\end{tabular} & 9(6) & 0.74 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{50}, 177\end{tabular} & 5(4) & 0.70 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, \textbf{10}, \textbf{20}, 22\\\textbf{30}, 34, \textbf{50}, \textbf{60}, 96\\104, 114, 121, 126, 141\\175, 177, 183, 201, 225\\239, 260, 278, 302, 321\\325, 335, 337, 369, 391\\395, 397, 412, 414, 438\\446, 477, 516, 554, 556\\580, 627, 642, 662, 686\\717, 720, 792, 814, 825\\853, 862, 873, 874, 909\\920, 921, 925, 928, 945\\959, 968, 973, 995\end{tabular} & 64(6) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{50}\end{tabular} & 4(4) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, \textbf{10}, \textbf{20}, 22\\\textbf{30}, 34, \textbf{50}, \textbf{60}, 66\\96, 104, 121, 126, 141\\175, 177, 183, 201, 225\\234, 239, 260, 269, 302\\321, 325, 335, 337, 391\\395, 397, 412, 414, 438\\446, 477, 516, 554, 556\\580, 627, 642, 662, 686\\717, 720, 814, 825, 853\\862, 873, 874, 909, 920\\921, 925, 928, 930, 945\\959, 968, 973, 995\end{tabular} & 64(6) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{30}\end{tabular} & 3(3) & - \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}

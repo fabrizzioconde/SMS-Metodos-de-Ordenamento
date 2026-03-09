@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\begin{table}[h]
+\caption{Rank Correlação Parcial para a Simulação 4.}
+\label{tab 2}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, \textbf{5}\\\textbf{6}, \textbf{7}, \textbf{8}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{3}, \textbf{4}, \textbf{8}, 18\\28, 42, 47, 91, 100\end{tabular} & 10(4) & 0.55 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{4}, \textbf{6}, \textbf{7}, \textbf{8}\\30, 42, 52, 72, 74\\84, 88, 92\end{tabular} & 7(5) & 0.55 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{4}, \textbf{7}, \textbf{8}, 18\\30, 66, 73, 84, 92\\99\end{tabular} & 13(4) & 0.55 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{4}, \textbf{7}, \textbf{8}, 18\\30, 66, 73, 84, 92\\99\end{tabular} & 11(4) & 0.55 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{3}, \textbf{4}, 38\end{tabular} & 4(3) & 0.52 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{3}, \textbf{4}, \textbf{6}, \textbf{7}\\\textbf{8}, 18, 20, 28, 30\\38, 42, 47, 52, 66\\72, 73, 74, 84, 88\\91, 92, 99, 100\end{tabular} & 24(6) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{4}\end{tabular} & 2(2) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, \textbf{5}\\\textbf{8}, 10, 11, 15, 17\\44\end{tabular} & 11(6) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{4}, \textbf{8}\end{tabular} & 4(4) & - \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}

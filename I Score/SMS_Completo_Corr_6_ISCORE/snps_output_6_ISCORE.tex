@@ -1,0 +1,57 @@
+﻿\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath} % For mathematical symbols and equations
+\usepackage{longtable} % For tables that span multiple pages
+
+\title{Teste Saída SMS - I SCORE - Base 6}
+\author{fabrizzioconde}
+\date{June 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{longtable}{c|c|c|c|c}
+\caption{Rank I SCORE para a Simulação 6.}
+\label{tab:rank_score} \\
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{40}\\\textbf{50}, \textbf{60}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, 22, \textbf{30}\\\textbf{50}, \textbf{60}, 69, 109, 114\\121, 177, 278, 335, 395\\402, 438, 516, 580, 627\\686, 693, 805, 861, 874\\909, 973, 988\end{tabular} & 28(6) & 0.72 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, 13, \textbf{20}, 22\\34, \textbf{50}, \textbf{60}, 68, 69\\79, 177, 191, 325, 335\\395, 438, 450, 477, 516\\580, 596, 627, 686, 693\\717, 805, 814, 861, 862\\874, 920, 921, 930, 973\\979, 988\end{tabular} & 215(5) & 0.72 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{50}\\\textbf{60}, 114, 191, 874\end{tabular} & 37(6) & 0.69 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{50}\\\textbf{60}, 114, 191, 874\end{tabular} & 9(6) & 0.83 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{50}, \textbf{60}\\121, 627\end{tabular} & 7(5) & 0.65 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, 6, \textbf{10}, 13\\15, \textbf{20}, 22, 23, 28\\\textbf{30}, 31, 33, 34, \textbf{40}\\44, 48, \textbf{50}, 52, 57\\\textbf{60}, 66, 68, 69, 76\\77, 79, 85, 96, 98\\104, 109, 114, 121, 122\\125, 126, 128, 129, 133\\137, 138, 140, 141, 151\\160, 162, 163, 173, 175\\177, 181, 183, 184, 191\\192, 200, 201, 214, 221\\225, 231, 234, 239, 240\\242, 243, 245, 250, 260\\261, 262, 266, 269, 274\\278, 282, 288, 293, 294\\295, 302, 303, 304, 321\\325, 328, 331, 335, 337\\344, 345, 369, 370, 387\\388, 391, 393, 395, 397\\402, 412, 414, 438, 446\\449, 450, 453, 457, 465\\471, 477, 483, 484, 487\\514, 515, 516, 528, 530\\532, 553, 554, 556, 564\\568, 572, 580, 584, 586\\596, 617, 620, 621, 627\\635, 640, 642, 643, 648\\662, 665, 667, 672, 673\\674, 681, 686, 693, 694\\709, 710, 712, 714, 717\\720, 727, 739, 740, 744\\748, 755, 758, 762, 771\\772, 790, 791, 792, 800\\801, 805, 814, 825, 829\\834, 839, 853, 855, 856\\861, 862, 873, 874, 880\\888, 892, 895, 907, 909\\910, 920, 921, 922, 925\\928, 929, 930, 933, 937\\945, 959, 968, 969, 973\\979, 980, 982, 987, 988\\992, 993, 995, 998, 999\end{tabular} & 215(7) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{50}, \textbf{60}\end{tabular} & 5(5) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, \textbf{10}, \textbf{20}, 22\\\textbf{30}, 34, \textbf{50}, \textbf{60}, 66\\96, 104, 121, 126, 141\\175, 177, 183, 201, 225\\234, 239, 260, 269, 302\\321, 325, 335, 337, 391\\395, 397, 412, 414, 438\\446, 477, 516, 554, 556\\580, 627, 642, 662, 686\\717, 720, 814, 825, 853\\862, 873, 874, 909, 920\\921, 925, 928, 930, 945\\959, 968, 973, 995\end{tabular} & 64(6) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{30}\end{tabular} & 3(3) & - \\
+\hline
+\end{longtable}
+
+\end{document}

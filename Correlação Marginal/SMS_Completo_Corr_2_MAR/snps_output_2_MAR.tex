@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\begin{table}[h]
+\caption{Rank Correlação Marginal para a Simulação 2.}
+\label{tab 2}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, \textbf{5}\\\textbf{6}, \textbf{7}, \textbf{8}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{5}, \textbf{7}\\\textbf{8}, 12, 54, 77, 88\\89\end{tabular} & 11(6) & 0.42 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{5}, \textbf{7}, \textbf{8}\\10, 51, 54, 100\end{tabular} & 16(5) & 0.41 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{5}, \textbf{7}, \textbf{8}\\11, 100\end{tabular} & 9(5) & 0.55 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{5}, \textbf{7}, \textbf{8}\\11, 100\end{tabular} & 7(5) & 0.80 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{5}, \textbf{7}, \textbf{8}\\12, 88\end{tabular} & 7(5) & 0.71 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{5}, \textbf{7}\\\textbf{8}, 10, 11, 12, 45\\51, 52, 54, 60, 77\\78, 84, 88, 89, 100\end{tabular} & 20(6) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{5}, \textbf{7}, \textbf{8}\end{tabular} & 5(5) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{5}, \textbf{7}\\\textbf{8}, 10, 12, 60, 88\\89\end{tabular} & 11(6) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{5}, \textbf{7}, \textbf{8}\end{tabular} & 5(5) & - \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}

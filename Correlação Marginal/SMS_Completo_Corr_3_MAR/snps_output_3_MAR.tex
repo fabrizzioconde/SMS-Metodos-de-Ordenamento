@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\begin{document}
+\begin{table}[h]
+\caption{Rank Correlação Marginal para a Simulação 4.}
+\label{tab 2}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{2}, \textbf{3}, \textbf{4}, \textbf{5}\\\textbf{6}, \textbf{7}, \textbf{8}, \textbf{9}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{7}, \textbf{9}, 10, 11, 35\\40, 42, 53, 60, 68\\69, 82\end{tabular} & 12(2) & 0.19 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{3}, \textbf{7}, \textbf{9}, 10, 11\\36, 40, 42, 53, 68\\69, 83, 90, 96\end{tabular} & 20(3) & 0.16 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{3}, \textbf{7}, \textbf{9}, 40, 42\\60\end{tabular} & 14(3) & 0.18 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{3}, \textbf{7}, \textbf{9}, 40, 42\\60\end{tabular} & 6(3) & 0.08 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{6}, \textbf{7}, 10, 19, 30\\34, 36, 51, 53, 57\\63, 68, 87, 92\end{tabular} & 14(2) & 0.12 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{3}, \textbf{6}, \textbf{7}, \textbf{9}, 10\\11, 19, 29, 30, 34\\35, 36, 40, 42, 44\\46, 49, 51, 53, 57\\60, 62, 63, 68, 69\\82, 83, 87, 90, 92\\93, 95, 96\end{tabular} & 33(4) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{7}\end{tabular} & 1(1) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{3}, \textbf{6}, \textbf{7}, \textbf{9}, 10\\40, 60, 82\end{tabular} & 8(4) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{9}\end{tabular} & 1(1) & - \\
+\hline
+\end{tabular}
+\end{table}
+\end{document}

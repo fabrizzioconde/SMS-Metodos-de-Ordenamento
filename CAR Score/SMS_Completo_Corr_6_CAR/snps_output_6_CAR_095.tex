@@ -1,0 +1,50 @@
+﻿\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable} % For tables that span multiple pages
+
+\begin{document}
+
+\begin{longtable}{c|c|c|c|c}
+\caption{Rank CARSCORE para a Simulação 6.}
+\label{tab:rank_carscore} \\
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Método} & \textbf{$\gamma$} & \textbf{\begin{tabular}[c]{@{}c@{}}\emph{SNPs} selecionados\end{tabular}} & \textbf{\# \emph{SNPs} (V)} & \textbf{\begin{tabular}[c]{@{}c@{}}Correlação\\média\end{tabular}} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+SNPs causais & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{30}, \textbf{40}\\\textbf{50}, \textbf{60}\end{tabular} & - & - \\
+\hline
+SMS Linear & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, \textbf{10}, \textbf{20}, 22\\\textbf{30}, \textbf{50}, \textbf{60}, 121, 177\\335, 395, 438, 477, 580\\686, 814, 862, 874, 920\\921, 973, 995\end{tabular} & 23(6) & 0.72 \\
+\hline
+SMS Radial & 0,001 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, 22, \textbf{30}\\\textbf{50}, \textbf{60}, 66, 96, 104\\114, 141, 177, 183, 201\\225, 234, 239, 260, 269\\278, 321, 335, 337, 391\\395, 397, 438, 446, 477\\516, 554, 556, 627, 642\\662, 717, 720, 792, 814\\825, 853, 874, 909, 921\\925, 930, 945, 968, 973\\995\end{tabular} & 117(6) & 0.74 \\
+\hline
+SMS Radial & 0,01 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, 22, \textbf{30}\\\textbf{50}, \textbf{60}, 438, 973\end{tabular} & 51(6) & 0.71 \\
+\hline
+SMS Radial & 0,1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, 22, \textbf{30}\\\textbf{50}, \textbf{60}, 438, 973\end{tabular} & 9(6) & 0.74 \\
+\hline
+SMS Radial & 1 & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{50}, 177\end{tabular} & 5(4) & 0.70 \\
+\hline
+União & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, 6, \textbf{10}, \textbf{20}\\22, \textbf{30}, 34, \textbf{50}, 52\\\textbf{60}, 66, 77, 79, 85\\96, 104, 114, 121, 141\\162, 173, 175, 177, 183\\184, 201, 225, 234, 239\\260, 269, 278, 300, 302\\321, 325, 335, 337, 360\\370, 372, 386, 387, 388\\391, 395, 397, 402, 412\\414, 434, 435, 438, 441\\446, 452, 453, 477, 480\\495, 514, 516, 523, 530\\531, 553, 554, 556, 557\\560, 572, 580, 584, 586\\607, 627, 631, 640, 642\\648, 662, 686, 693, 709\\714, 717, 719, 720, 790\\791, 792, 801, 805, 811\\814, 825, 829, 831, 853\\862, 873, 874, 876, 902\\907, 909, 918, 920, 921\\925, 928, 929, 930, 933\\945, 959, 968, 969, 972\\973, 982, 988, 995, 999\end{tabular} & 125(6) & - \\
+\hline
+Interseção & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{20}, \textbf{50}\end{tabular} & 4(4) & - \\
+\hline
+Valor-p bruto & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, 4, \textbf{10}, \textbf{20}, 22\\\textbf{30}, 34, \textbf{50}, \textbf{60}, 66\\96, 104, 121, 126, 141\\175, 177, 183, 201, 225\\234, 239, 260, 269, 302\\321, 325, 335, 337, 391\\395, 397, 412, 414, 438\\446, 477, 516, 554, 556\\580, 627, 642, 662, 686\\717, 720, 814, 825, 853\\862, 873, 874, 909, 920\\921, 925, 928, 930, 945\\959, 968, 973, 995\end{tabular} & 64(6) & - \\
+\hline
+Valor-p corrigido & - & \begin{tabular}[c]{@{}c@{}}\textbf{1}, \textbf{10}, \textbf{30}\end{tabular} & 3(3) & - \\
+\hline
+\end{longtable}
+
+\end{document}
