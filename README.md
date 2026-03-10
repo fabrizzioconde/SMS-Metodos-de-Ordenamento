@@ -1,2 +1,25 @@
-# SMS-Metodos-de-Ordenamento
-SMS-Métodos de Ordenamento é um projeto voltado à avaliação de métodos de ordenamento de variáveis aplicados ao método SNP Markers Selector (SMS) em estudos de associação genômica ampla (GWAS). O foco do trabalho é investigar o impacto da etapa de ordenamento dos marcadores SNPs na qualidade da seleção final de atributos, comparando o rank tradicional da Random Forest com abordagens alternativas como CAR Score, Correlação Marginal, Correlação Parcial e I Score. O SMS é estruturado em três etapas principais — relevância, corte e refinamento — implementadas com técnicas de aprendizado de máquina e inteligência computacional, buscando identificar SNPs causais e reduzir a seleção de marcadores não informativos. Os experimentos foram realizados em seis bases de dados simuladas com efeitos aditivos e interações entre pares, trios e quádruplas de SNPs. Os resultados indicam que não existe um único método superior em todos os cenários, mas destacam o I Score em bases lineares e o CAR Score em interações mais complexas. 
+# SMS-Métodos de Ordenamento
+
+**SMS-Métodos de Ordenamento** é um projeto voltado à avaliação de técnicas de ordenamento de variáveis no método **SNP Markers Selector (SMS)**, aplicado a estudos de associação genômica ampla (**GWAS**).
+
+O projeto compara diferentes abordagens de ranqueamento de marcadores **SNPs**, incluindo **Random Forest**, **CAR Score**, **Correlação Marginal**, **Correlação Parcial** e **I Score**, com o objetivo de analisar seu impacto na seleção de atributos relevantes em diferentes cenários simulados.
+
+## Objetivo
+
+Investigar como diferentes métodos de ordenamento influenciam o desempenho do **SMS** na identificação de **SNPs causais** e na redução de variáveis não informativas.
+
+## Métodos avaliados
+
+- **Random Forest**
+- **CAR Score**
+- **Correlação Marginal**
+- **Correlação Parcial**
+- **I Score**
+
+## Aplicação
+
+O projeto é direcionado à seleção de atributos em bases de dados genômicas, especialmente em problemas de **GWAS**, considerando tanto efeitos lineares quanto interações complexas entre marcadores genéticos.
+
+## Observação
+
+Os experimentos indicam que não existe um único método superior em todos os cenários, destacando diferentes técnicas conforme a complexidade dos dados analisados. 
